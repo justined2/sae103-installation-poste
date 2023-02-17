@@ -1,0 +1,27 @@
+#######################################################################
+##### DOCUMENTATION DU SCRIPT “script_traitement_photos_linux.sh” #####
+#######################################################################
+
+Ce script permet de traiter un lot d'images en y effectuant plusieurs modifications :
+	- Conversion de l'image au format .svg en .png ;
+	- Rognage du logo "Created on Face Co" et ajustement pour conserver une taille d'image carrée ;
+	- Redimensionnement de l'image en 200px * 200px ;
+	- Conversion de l'image en niveau de gris ;
+	- Suppression de l'image .svg originale ;
+
+
+Ouvrez un terminal dans le dossier dans lequel se situe le script et saisissez,
+	
+	- Pour télécharger l'image Docker nécessaire à l'exécution du script "script_traitement_photos_linux.sh" : 
+
+		docker image pull sae103-imagick
+
+	- Pour pouvoir exécuter le script sans problème, saisissez (une seule fois) la commande suivante :
+
+		chmod +x script_traitement_photos_linux.sh
+
+	- Pour exécuter le script  :
+
+		./script_traitement_photos_linux.sh
+
+Les photos modifiées seront générées dans le sous-dossier "photos_commerciaux".

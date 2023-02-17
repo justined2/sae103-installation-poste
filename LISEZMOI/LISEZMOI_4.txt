@@ -1,0 +1,28 @@
+###############################################################
+##### DOCUMENTATION DU SCRIPT “script_generation_html.sh” #####
+###############################################################
+
+Ce script permet la création d'un fichier html pour chaque régions avec ses données respectives du nom de, par exemple :
+	- FR-BRE.html
+	- FR-ARA.html
+	- FR-BFC.html
+	- FR-CVL.html
+	...
+
+/!\ Assurez-vous que les textes (au format ".txt") que vous souhaitez traiter se trouvent bien dans le même dossier que le script PHP /!\
+
+Ouvrez un terminal dans le dossier dans lequel se situe le script script_generation_html.sh et saisissez,
+	
+	- Pour télécharger l'image Docker nécessaire à l'exécution du script Bash : 
+
+		docker image pull sae103-php
+
+	- Saisissez la commande suivante pour pouvoir exécuter la commande à venir :
+
+		chmod +x script_generation_html.sh
+
+	- Pour exécuter le script  :
+
+		./script_generation_html.sh
+
+Les fichiers html seront générés dans le dossier dans lequel se trouve le script.

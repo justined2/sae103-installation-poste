@@ -1,0 +1,12 @@
+RÉPARTITION DES TÂCHES - SEMAINE 3 : 
+
+JUSTINE............................Conversion des avatars en nuances de gris (script bash)
+JUSTINE............................Rédaction du fichier LISEZMOI_2.txt
+JUSTINE............................Génération du QRCode de la dernière page
+JUSTINE............................Rédaction du fichier LISEZMOI_3.txt
+KERYAN, ESTEBAN, YANN, CORENTIN....Création d'un script PHP à partir de la page HTML
+KERYAN, CORENTIN...................Rédaction du fichier LISEZMOI_4.txt
+ESTEBAN, YANN, CORENTIN............Script permettant de lancer le processus de génération d'un PDF d'une région 
+KERYAN, YANN.......................Rédaction du fichier LISEZMOI_FINAL.txt 
+ESTEBAN, YANN......................Script bash permettant de lancer la chaîne de processus
+JUSTINE............................Rédaction du fichier TACHES_2.txt

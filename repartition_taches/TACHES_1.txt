@@ -1,0 +1,9 @@
+RÉPARTITION DES TÂCHES - SEMAINES 1-2 : 
+
+TOUS............................Création du fichier de configuration regions.conf
+ESTEBAN, YANN...................Extraction du texte de la page 1 (texte.dat) + rédaction du script PHP 
+KERYAN, CORENTIN................Extraction des données du tableau (tableau.dat) + rédaction du script PHP 
+CORENTIN........................Extraction des noms des meilleurs commerciaux (comm.dat) + rédaction du script PHP 
+YANN, JUSTINE...................Rédaction du fichier LISEZMOI_1.txt
+JUSTINE.........................Création de la maquette du document HTML/CSS
+JUSTINE.........................Rédaction du fichier TACHES_1.txt

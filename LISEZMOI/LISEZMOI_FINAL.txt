@@ -1,0 +1,24 @@
+###################################################################
+##### DOCUMENTATION DU SCRIPT “script_final.sh”               #####
+###################################################################
+
+Ce script permet de lancer tous les autres scripts et commandes permettant la création des fichiers PDFs dans un dossier archive 
+
+
+Ouvrez un terminal dans le dossier dans lequel se situe le script script_generation_pdf.sh et saisissez,
+	
+	- Pour télécharger l'image Docker nécessaire à l'exécution du script Bash : 
+
+		docker image pull sae103-imagik
+		docker image pull sae103-qrcode
+		docker image pull sae103-html2pdf
+
+	- Saisissez la commande suivante pour pouvoir exécuter la commande à venir :
+
+		chmod +x script_final.sh.sh
+
+	- Pour exécuter le script  :
+
+		./script_final.sh
+
+Les fichiers pdf seront générés dans le dossier regions_pdf.tar.gz .

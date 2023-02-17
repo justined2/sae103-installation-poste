@@ -1,0 +1,32 @@
+###################################################################
+##### DOCUMENTATION DU SCRIPT “script_extraction_donnees.php” #####
+###################################################################
+
+Ce script permet de traiter un fichier de données brutes et d'en extraire trois fichiers nettoyés :
+	- Un fichier contenant les textes (texte.dat) ;
+	- Un fichier contenant les données du tableau (tableau.dat) ;
+	- Un fichier contenant le nom des meilleurs commerciaux (comm.dat) ;
+
+/!\ Assurez-vous que les textes (au format ".txt") que vous souhaitez traiter se trouvent bien dans le même dossier que le script PHP /!\
+
+Ouvrez un terminal dans le dossier dans lequel se situe le script php et saisissez,
+	
+	- Pour télécharger l'image Docker nécessaire à l'exécution du script PHP : 
+
+		docker image pull sae103-php
+
+	- Pour lancer le script : 
+
+		docker run -ti --rm -v <chemin_absolu>:/work sae103-php php -f script_extraction_donnees.php
+
+		* où <chemin_absolu> représente le chemin absolu du dossier dans lequel se trouve le script. 
+
+	- En cas d'erreur liée à un problème de droit, saisissez la commande suivante :
+
+		chmod +x script_extraction_donnees.php
+
+	- Pour exécuter le script  :
+
+		./script_extraction_donnees.php
+
+Les fichiers textes seront générés dans le dossier dans lequel se trouve le script.

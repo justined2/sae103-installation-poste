@@ -1,0 +1,296 @@
+/**************************/
+/* DÉFINITION DES POLICES */
+/**************************/
+
+@font-face {
+   font-family: 'rajdhanilight';
+   src: url('polices/rajdhani-light-webfont.woff2') format('woff2'),
+        url('polices/rajdhani-light-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'rajdhanimedium';
+   src: url('polices/rajdhani-medium-webfont.woff2') format('woff2'),
+        url('polices/rajdhani-medium-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'rajdhanisemibold';
+   src: url('polices/rajdhani-semibold-webfont.woff2') format('woff2'),
+        url('polices/rajdhani-semibold-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'rajdhanibold';
+   src: url('polices/rajdhani-bold-webfont.woff2') format('woff2'),
+        url('polices/rajdhani-bold-webfont.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+}
+
+/**********************/
+/* DEFINITION GLOBALE */
+/**********************/
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family:'rajdhanilight', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Définition des pages */
+section{
+   position: relative;
+   height: 100vh;
+   padding: 5vh 5vh;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Définition des liens */
+a{
+   text-decoration: none;
+}
+
+/* Définition des titres h1 */
+h1{
+   font-family: 'rajdhanibold', 'Arial Narrow', Arial, sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 10px;
+   font-size: 30px;
+   padding: 10px 0;
+   border-bottom: 10px solid brown;
+   margin-bottom: 25px;
+}
+
+/* Définition des titres h2 et sous-titres h3 */
+h2, h3{
+   font-family: 'rajdhanisemibold', 'Arial Narrow', Arial, sans-serif;
+   font-variant: small-caps;
+   color: brown;
+}
+
+/* Définition des sous-titres h3 */
+h3{
+   font-family: 'rajdhanisemi', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Définition des pieds de page */
+.bottom{
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+   min-height: 5rem;
+   width: 100%;
+   right:10px;
+   bottom: 10px;
+   /* padding: 0px 10px; */
+   align-items: flex-end;
+   justify-content: flex-end;
+}
+
+/***************************************/
+/* DÉFINITION DE LA PAGE DE COUVERTURE */
+/***************************************/
+
+/* Définition de la page de couverture */
+#pageDeCouverture{
+   align-items: center;
+}
+
+#pageDeCouverture h2{
+   font-variant: none;
+   color: black;
+}
+
+/* Définition de l'image de couverture (logo de la région) */
+#pageDeCouverture img{
+   position: relative;
+   top: 50%;
+   width: 200px;
+}
+
+/****************************************************/
+/* DÉFINITION DE LA PAGE 1 : RÉSULTATS TRIMESTRIELS */
+/****************************************************/
+
+/* Définition de la page 1 */
+#page1{
+   align-items: flex-start;
+}
+
+/* Définition des paragraphes */
+#page1 p{
+   text-align: justify;
+   text-indent: 25px;
+   margin: 20px 0;
+}
+
+/* Cache le texte en cas de dépassement */
+.overflow {
+   height: 500px;
+   overflow: hidden;
+   -webkit-mask-image: linear-gradient(180deg, #000 50%, transparent);
+}
+
+/* Définition du tableau */
+table{
+   text-align: center;
+   border-collapse: separate;
+   border-spacing: 1px;
+   margin: 25px auto;
+}
+
+/* Définition du titre du tableau */
+caption{
+   font-family: 'rajdhanibold', 'Arial Narrow', Arial, sans-serif;
+   font-variant: small-caps;
+   color: brown;
+}
+
+/* Définition de la première ligne du tableau */
+th{
+   font-family: 'rajdhanibold', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   text-transform: uppercase;
+   color: white;
+   padding: 10px 10px;
+   background-color: brown;
+}
+
+/* Définition des cellules contenant les données du tableau */
+td{
+   padding: 10px 10px;
+   background-color:white;
+   border-bottom: solid 1px antiquewhite;
+}
+
+/* Définition des cellules de la première colonne du tableau */
+tr td:first-child{
+   font-family: 'rajdhanibold', 'Arial Narrow', Arial, sans-serif;
+   color: brown;
+   background-color: antiquewhite;
+}
+
+/* Définition des cellules de la dernière colonne du tableau */
+tr td:last-child{
+   font-family: 'rajdhanibold', 'Arial Narrow', Arial, sans-serif;
+   border-right: solid 1px rgb(250, 235, 215);
+}
+
+/* Définition du style en fonction du calcul du CA (positif) */
+.evolutionPositive{
+   font-weight: 500;
+   color: darkgreen;
+}
+
+/* Définition du style en fonction du calcul du CA (négatif) */
+.evolutionNegative{
+   color: red;
+}
+
+/*******************************************************************/
+/* DÉFINITION DE LA PAGE 2 : NOS MEILLEURS COMMERCIAUX DU SEMESTRE */
+/*******************************************************************/
+
+/* Définition de la page 2*/
+#page2{
+   align-items: flex-start;
+}
+
+/* Définition de la galerie photos */
+#galeriePhotos{
+   margin: auto auto;
+}
+
+/* Définition de la galerie photo des meilleurs commerciaux */
+#galeriePhotos{
+   display: flex;
+   flex-direction: row;
+}
+
+/* Définition des images de la galerie (photo des commerciaux) */
+#galeriePhotos img{
+   border: solid 1px brown;
+   padding: 20px 20px 80px 20px;
+   margin: 10px 10px;
+   width: 200px;
+}
+
+/* Définition des légendes des photos */
+figcaption{
+   position: relative;
+   bottom: 100px;
+   padding: 10px 10px 50px 10px;
+   margin: 10px 10px;
+   width: 200px;
+   text-align: center;
+}
+
+/* Définition des prénoms et noms des meilleurs commerciaux */
+.nom{
+   font-family: 'rajdhanisemibold', 'Arial Narrow', Arial, sans-serif;
+   color: brown;
+}
+
+/***************************/
+/* DÉFINITION DE LA PAGE 3 */
+/***************************/
+
+/* Définition de la page 3 */
+#page3{
+   align-items: center;
+   margin: auto auto;
+}
+
+/* Définition du QR Code */
+#page3 img{
+   width: 200px;
+}
+
+/* Définition des crédits */
+#page3 p{
+   text-align: center;
+   position: relative;
+   bottom: -550px;
+}
+
+
+
+/*************************/
+/* DÉFINITION DES MÉDIAS */
+/*************************/
+
+/* @page { size: A4 } */
+@media print {
+   section {
+      width: 8.26in;
+      height: 11.66in;
+      padding: 1in 1in;
+      page-break-after: always;
+   }
+
+   th{
+      -webkit-print-color-adjust: exact;
+   }
+   
+   td{
+      -webkit-print-color-adjust: exact;
+   }
+
+   html {
+      -webkit-print-color-adjust: exact;
+   }
+}
