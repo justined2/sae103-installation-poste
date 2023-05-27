@@ -1,5 +1,5 @@
 # sae103-installation-poste
-### Compétence 3 : Administrer des systèmes informatiques communicants complexes
+### 💪 Compétence 3 : Administrer des systèmes informatiques communicants complexes
 Installation d'un poste pour le développement
 
 Automatisation de tâches visant à traiter des lots de documents :
